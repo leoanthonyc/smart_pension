@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative "page_view_parser"
+require_relative "lib/page_view_parser"
 
 file_path = ARGV[0]
 if file_path.nil?

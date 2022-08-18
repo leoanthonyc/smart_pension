@@ -1,5 +1,5 @@
 require 'spec_helper'
-require_relative '../scanner'
+require_relative '../../lib/scanner'
 
 describe PageViewScanner do
   let(:webserverlog_io) { StringIO.new(webserverlog_str) }

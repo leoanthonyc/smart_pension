@@ -1,5 +1,5 @@
 require 'spec_helper'
-require_relative '../repository'
+require_relative '../../lib/repository'
 
 
 describe PageViewRepository do
