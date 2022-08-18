@@ -2,10 +2,12 @@ require_relative "scanner"
 require_relative "repository"
 
 class PageViewParser
-  attr_reader :file
+  attr_reader :file, :scanner, :repo
 
   def initialize(file)
     @file = file
+    @scanner = PageViewScanner.new(file)
+    @repo = PageViewRepository.new
   end
 
   def call
@@ -19,14 +21,6 @@ class PageViewParser
     scanner.each_line do |path, ip_address|
       repo.store(path, ip_address)
     end
-  end
-
-  def scanner
-    @scanner ||= PageViewScanner.new(file)
-  end
-
-  def repo
-    @repo ||= PageViewRepository.new
   end
 
   def output
