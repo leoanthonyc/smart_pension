@@ -28,6 +28,3 @@ I created two base classes `Scanner` and `Repository` that act as a guide when i
 
 Fellow developers can extend these base classes to meet future requirements.
 
-## Future TODO
-- Create a wrapper around `Scanner` and `Repository`
-
