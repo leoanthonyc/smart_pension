@@ -13,7 +13,7 @@ describe PageVisitScanner do
 
   it "yields both path and IP address" do
     scanner = PageVisitScanner.new(webserverlog_io)
-    expect { |b| scanner.each_entry(&b) }
+    expect { |b| scanner.each_line(&b) }
       .to yield_successive_args(
         ['/help_page/1', '126.318.035.038'],
         ['/contact', '184.123.665.067'],
