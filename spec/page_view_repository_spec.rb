@@ -2,7 +2,7 @@ require 'spec_helper'
 require_relative '../repository'
 
 
-describe PageVisitRepository do
+describe PageViewRepository do
   let(:repo) { described_class.new }
 
   describe '#store' do

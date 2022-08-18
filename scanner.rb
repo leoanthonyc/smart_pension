@@ -10,7 +10,7 @@ class Scanner
   end
 end
 
-class PageVisitScanner < Scanner
+class PageViewScanner < Scanner
   def each_line
     handle.each_line do |line|
       path, ip_address = line.split(" ")

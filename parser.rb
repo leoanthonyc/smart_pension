@@ -20,6 +20,6 @@ rescue Errno::ENOENT
   exit 1
 end
 
-PageVisitScanner.new(file_handle).each_line do |path, ip_address|
+PageViewScanner.new(file_handle).each_line do |path, ip_address|
   puts "path: #{path}, ip_address: #{ip_address}"
 end
