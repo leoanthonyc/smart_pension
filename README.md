@@ -1,10 +1,9 @@
 # smart_pension - Ruby Developer Test
-
-## Write a ruby script parses webserver.log, and outputs two lists:
+Write a ruby script parses webserver.log, and outputs two lists:
  - list of web pages ordered by visits (descending)
  - list of web pages ordered by unique IP address visits (descending)
  
- ## Solution
+ ## Running the script
  ```bash
  ./parser.rb webserver.log
  ```
