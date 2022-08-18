@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+require_relative "scanner"
+
 file_path = ARGV[0]
 if file_path.nil?
   STDERR.puts
@@ -16,4 +18,8 @@ rescue Errno::ENOENT
   STDERR.puts "File #{file_path} does not exist!"
   STDERR.puts
   exit 1
+end
+
+PageVisitScanner.new(file_handle).each_entry do |path, ip_address|
+  puts "path: #{path}, ip_address: #{ip_address}"
 end
