@@ -19,7 +19,7 @@ Create a repository to store page visits. The repository is also responsible for
 
 A repository needs to implement the `store` method.
 
-I created the sub-class `PageVisitRepository` to meet the sorting requirements. Adding these sorting methods to the base class isn't advisable since `hits` and `unique_hits` only makes sense in the page view context.
+I created the sub-class `PageViewRepository` to meet the sorting requirements. Adding these sorting methods to the base class isn't advisable since `hits` and `unique_hits` only makes sense in the page view context.
 2. `sort_by_hits`
 3. `sort_by_unique_hits`
 
