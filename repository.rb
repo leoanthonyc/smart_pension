@@ -28,10 +28,10 @@ class PageViewRepository < Repository
   end
 
   def sort_by_hits
-    repository.values.sort_by { |x| x[:hits] }.reverse
+    repository.values.sort_by { |h| h[:hits] }.reverse
   end
 
   def sort_by_unique_hits
-    repository.values.sort_by { |x| x[:unique_hits] }.reverse
+    repository.values.sort_by { |h| h[:unique_hits] }.reverse
   end
 end
