@@ -1,3 +1,5 @@
+require 'set'
+
 class Repository
   def store
     raise "Not Implemented"
