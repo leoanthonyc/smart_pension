@@ -27,13 +27,13 @@ class PageViewParser
     puts
     puts "SORT BY HITS DESC"
     repo.sort_by_hits.each { |h|
-      puts "path: #{h[:path]} views: #{h[:hits]}"
+      puts "path: #{h[:path]}, views: #{h[:hits]}"
     }
 
     puts
     puts "SORT BY UNIQUE_HITS DESC"
     repo.sort_by_unique_hits.each { |h|
-      puts "path: #{h[:path]} unique_views: #{h[:unique_hits]}"
+      puts "path: #{h[:path]}, unique_views: #{h[:unique_hits]}"
     }
 
     puts
