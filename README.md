@@ -4,6 +4,12 @@ Write a ruby script parses webserver.log, and outputs two lists:
  - list of web pages ordered by unique IP address visits (descending)
  
  ## Running the script
+ 1. Make sure ruby 2.7.2 is installed.
+ 2. Clone the repo
+ 3. Go to the repo and run `bundle install`
+ 4. Run specs with `rspec`
+ 5. Run the script `./parser.rb webserver.log`
+
  ```bash
  ./parser.rb webserver.log
 
