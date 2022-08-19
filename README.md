@@ -1,10 +1,10 @@
 # smart_pension - Ruby Developer Test
-Write a ruby script parses webserver.log, and outputs two lists:
+Write a ruby script that parses webserver.log, and outputs two lists:
  - list of web pages ordered by visits (descending)
  - list of web pages ordered by unique IP address visits (descending)
  
  ## Running the script
- 1. Make sure ruby 2.7.2 is installed.
+ 1. Make sure [ruby 3.1.2](https://www.ruby-lang.org/en/downloads/) is installed
  2. Clone the repo
  3. Go to the repo and run `bundle install`
  4. Run specs with `rspec`
@@ -53,6 +53,7 @@ I did not create a base class `Parser` since I didn't find a good abstraction fo
 
 ## TODO
 - Make `PageViewScanner` robust by validating if `path` and `ip_address` fits a certain format, i.e. `path` is a valid URL format, `ip_address` is a valid IP address
+- Make it possible to output the lists to a file
 
 ## Summary
 I'm aware that my implementation only fits the requirements of this test and may not be future-proof, especially when new requirements come in. I encourage anyone to try new methods, do not hold on to the current implementation especially when it makes development hard.
