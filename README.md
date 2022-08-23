@@ -7,7 +7,7 @@ Write a ruby script that parses webserver.log, and outputs two lists:
  1. Make sure [ruby 3.1.2](https://www.ruby-lang.org/en/downloads/) is installed
  2. Clone the repo
  3. Go to the repo and run `bundle install`
- 4. Run specs with `rspec`
+ 4. Run specs with `bundle exec rspec`
  5. Run the script `./parser.rb webserver.log`
 
  ```bash
